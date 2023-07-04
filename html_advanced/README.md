@@ -1,0 +1,2 @@
+# alx_html_css
+This directory contains files that would be used to create my first website in the ALX iSWE program. It would contain html, css and most likely js files. The site would be developed from a designer's figma file and I'm excited to begin.
