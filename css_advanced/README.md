@@ -1,0 +1,1 @@
+In this project, I wouls be adding styling to my SmileSchool project as part of the css_advanced project in my ALX Intro to Software Engineering program.
