@@ -1,0 +1,492 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+	font-size: 62.5%;
+}
+
+:root {
+	--color-primary: #C271FF;
+	--color-black: #090909;
+	--color-white: #ffffff;
+	--hover-active: #c171ffde;
+	--font-family-base: "Josefin Sans", sans-serif;
+	--font-family-title: "Source Sans Pro", sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: var(--font-family-base);
+}
+
+
+
+
+/* hero section */
+.banner-container {
+    padding-top: 35px;
+    top: 0;
+    /* inset: 10% 10% 10% 10%; */
+    width: 100%;
+    height: 1093px;
+    background-image: url("Smile School assets/background-bw.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Header */
+.header {
+    padding: 0 160px;
+    z-index: 9;
+    height: 40px;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.header-container {
+    height: 32px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#logo {
+    width: 167px;
+    height: 30px;
+}
+
+.navigation {
+    display: flex;
+    gap: 52px;
+    text-transform: uppercase;
+    
+}
+
+.navigation > a {
+    color: var(--color-white);
+    font-family: var(--font-family-title);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.hero-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.hero-title {
+    color: var(--color-white);
+    text-align: center;
+    font-family: var(--font-family-title);
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.hero-subtitle {
+    display: flex;
+    align-items: center;
+    gap: 57px;
+    color: var(--color-white);
+    text-align: center;
+    font-family: var(--font-family-title);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.call-to-action-btn {
+    width: 162px;
+    height: 44px;
+    flex-shrink: 0;
+    border-radius: 22px;
+    background: var(--color-primary);
+    border: none;
+    margin-top: 38px;
+    color: var(--color-white);
+    text-align: center;
+    font-family: var(--font-family-title);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 13px;
+    box-shadow: 9px 10px 34px 0px rgba(0,0,0,0.67);
+-webkit-box-shadow: 9px 10px 34px 0px rgba(0,0,0,0.67);
+-moz-box-shadow: 9px 10px 34px 0px rgba(0,0,0,0.67);
+}
+
+.call-to-action-btn:hover {
+    cursor: pointer;
+    background-color: var(--hover-active);
+}
+
+.pros-container {
+    padding: 0 216px;
+    margin-top: 168px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 87px;
+}
+
+.pros-title {
+    color: var(--color-white);
+    font-family: var(--font-family-title);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.pros-title > span {
+    color: var(--color-primary);
+    font-family: var(--font-family-title);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.smilePerson-carousel {
+    display: flex;
+    gap: 139px;
+    align-items: center;
+}
+
+.smilePerson-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.smilePerson-image {
+    border-radius: 50%;
+}
+
+.smilePerson-name {
+    color: var(--color-white);
+    text-align: center;
+    font-family: var(--font-family-title);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 27px; 
+}
+
+.smilePerson-position {
+    color: var(--color-white);
+    text-align: center;
+    font-family: var(--font-family-title);
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px; 
+}
+
+
+
+/* Review section */
+.review-section {
+    background-color: var(--color-primary);
+    height: 392px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.review-section-container {
+    padding: 0 237px;
+    display: flex;
+    gap: 69px;
+    align-items: center;
+}
+
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.quote {
+    width: 730px;
+    color: var(--color-white);
+    font-family: var(--font-family-title);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33.6px; 
+    text-decoration: none;
+    margin-bottom: 22px;
+}
+
+.quote::before {
+    content: no-open-quote;
+}
+.quote::after {
+    content: no-close-quote;
+}
+
+
+/* tutorials section */
+.tutorials {
+    padding: 87px 106px;
+}
+
+.tutorials-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 58px;
+}
+
+.video-rating-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 75px;
+    
+}
+
+.tutorials-title {
+    color: #071629;
+    text-align: center;
+    font-family: var(--font-family-title);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.tutorials-title > span {
+    color: var(--color-primary);
+    font-family: var(--font-family-title);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.video-rating-card {
+    width: 255px;
+    height: 335px;
+    flex-shrink: 0;
+}
+
+.video-img-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-img-btn > embed {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+}
+
+.video-rating-card-padding {
+    padding: 0 13px 15px 13px; /* clockwise direction */
+}
+
+.video-title {
+    color: #071629;
+    font-family: var(--font-family-title);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 10px;
+}
+
+.video-description {
+    color: rgba(7, 22, 41, 0.50);
+    font-family: var(--font-family-title);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 8px;
+    width: 242px;
+}
+
+.video-rater {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.video-rater-img {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    margin: 14px 0;
+}
+
+.video-rater-name {
+    color: var(--color-primary);
+    font-family: var(--font-family-title);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 27px; 
+}
+
+.ratings-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.time {
+    color: var(--color-primary);
+    text-align: right;
+    font-family: var(--font-family-title);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 27px;
+}
+
+
+
+/* Membership section */
+.membership {
+    width: 100%;
+    height: 502px;
+    flex-shrink: 0;
+    background-color: #071629;
+    /* width: 0 164px; */
+    padding: 70px 164px 52px 164px;
+}
+
+.membership-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 58px;
+}
+
+.membership-card-container {
+    display: flex;
+    gap: 29px;
+}
+
+.membership-card {
+    width: 257px;
+    height: 153px;
+    flex-shrink: 0;
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.membership-smiley-img {
+    width: 43.666px;
+    height: 35.353px;
+    flex-shrink: 0;
+    margin-bottom: 27px;
+}
+
+.membership-card-name {
+    width: 256px;
+    color: var(--color-white);
+    text-align: center;
+    font-family: var(--font-family-title);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    margin-bottom: 13px;
+}
+
+.membership-card-description {
+    width: 212px;
+    color: var(--color-white);
+    text-align: center;
+    font-family: var(--font-family-title);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    opacity: 0.8;
+}
+
+
+
+/* FAQ section */
+.FAQ {
+    padding: 84px 250px;
+}
+
+.FAQ-container {
+    width: 100%;
+    height: 707px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 74px;
+}
+
+.FAQ-title {
+    color: #071629;
+    text-align: center;
+    font-family: var(--font-family-title);
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.FAQ-card-container {
+    display: flex;
+    gap: 220px;
+}
+
+.FAQ-card {
+    display: flex;
+    width: 350px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.FAQ-card-title {
+    color: #071629;
+    font-family: var(--font-family-title);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.FAQ-card-paragraph {
+    color: rgba(7, 22, 41, 0.50);
+    font-family: Source Sans Pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    width: 350px;
+}
